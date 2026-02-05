@@ -3,7 +3,7 @@ title: Slot Assigned Nodes
 status: DRAFTED
 created_at: 2026-02-05
 updated_at: 2026-02-05
-pr: (leave this empty until the PR is created)
+pr: https://github.com/salesforce/lwc-rfcs/pull/97
 ---
 
 # Slot Assigned Nodes
