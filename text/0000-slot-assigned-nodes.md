@@ -15,7 +15,7 @@ To observe slot data requires a bit of boilerplate. The goal would be to remove 
 ## Basic example
 
 > Note: Normalize `nodes` by removing all `node.type === Node.TEXT_NODE` with `node.nodeValue === ''`. This simplifies logic for devs.
-> Note2: Using `slot` as the place holder name, but could copy lit's `queryAssignedNodes()`.
+> Note2: Using `slot` as the placeholder name, but could copy lit's `queryAssignedNodes()`.
 
 ```typescript
 import { LightningElement, slot } from 'lwc';
@@ -81,7 +81,7 @@ Not sure there is any benefit in the long run to this vs `hidden={}` syntax.
 
 ## Adoption strategy
 
-Template documentation.
+Document in or below the template docs.
 
 # How we teach this
 
