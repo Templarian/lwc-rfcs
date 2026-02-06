@@ -15,6 +15,8 @@ To observe slot data requires a bit of boilerplate. The goal would be to remove 
 ## Basic example
 
 > Note: Normalize `nodes` by removing all `node.type === Node.TEXT_NODE` with `node.nodeValue === ''`. This simplifies logic for devs.
+> Note2: Using `slot` as the place holder name, but could copy lit's `queryAssignedNodes()`.
+
 ```typescript
 import { LightningElement, slot } from 'lwc';
 
@@ -38,6 +40,14 @@ export default class Playground extends LightningElement {
 
     @slot('name')
     nameNodes: Array<Node>;
+
+    get showBody() {
+        return this.bodyNodes.length > 0;
+    }
+
+    get showName() {
+        return this.nameNodes.length > 0;
+    }
 }
 ```
 
